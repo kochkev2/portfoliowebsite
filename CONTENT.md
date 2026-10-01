@@ -8,7 +8,7 @@ I am very fond of pixel art and am always actively working to improve my own pix
 
 ## Projects
 ### Tinted Isle
-A puzzle gardening simulator
+A puzzly gardening simulator
 ### ConSwaption
 A fast-paced magical card game
 ### Hive Blinds
