@@ -27,7 +27,7 @@ This version of the portfolio intentionally uses no CSS
 
 ## Portfolio
 
-**Live Site:** [View my portfolio on Netlify](YOUR-NETLIFY-URL)
+**Live Site:** [View my portfolio on Netlify](https://kevinkochportfolio.netlify.app/)
 
 ## Contact
 
