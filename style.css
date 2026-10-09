@@ -1,19 +1,11 @@
 :root {
-    --primary-bg: #e3e3e3;
-    --primary-text: #444;
-    --standard-gap: 40px;
-}
+    --rosy-copper: #D05E52;
+    --dusty-rose: #CB8380;
+    --strong-cyan: #4DD0E1;
+    --pacific-cyan: #018F9D;
+    --mauve-bark: #6D5148;
 
-body{
-    font-family: sans-serif;
-    background: var(--primary-bg);
-    color: var(--primary-text)
-}
-
-#projects article {
-    margin: var(--standard-gap)
-}
-
-nav {
-    background: yellow;
+    --primary-bg: #FFF9F7;
+    --primary-text: #382E2B;
+    --standard-gap: 24px;
 }
