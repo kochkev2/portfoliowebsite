@@ -175,6 +175,39 @@ nav a:focus-visible {
     color: var(--rosy-copper);
 }
 
+#contact {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background-color: var(--soft-cyan);
+    border: 2px solid var(--pacific-cyan);
+    border-radius: 25px;
+}
+
+#contact h2 {
+    color: var(--primary-text);
+    margin-top: 0;
+}
+
+#contact a {
+    color: var(--mauve-bark);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+footer {
+    max-width: 1150px;
+    margin: 40px auto 0;
+    padding: 20px;
+    border-top: 2px solid var(--dusty-rose);
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: var(--mauve-bark);
+    margin: 0;
+}
 
 @media (max-width: 700px) {
     #projects article {
