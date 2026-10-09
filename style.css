@@ -17,6 +17,8 @@
     box-sizing: border-box;
 }
 
+/* ===== TYPOGRAPHY ===== */
+
 body {
     font-family: 'DM Sans', sans-serif;
     background-color: var(--primary-bg);
@@ -25,18 +27,7 @@ body {
     padding: 20px;
 }
 
-#projects article {
-    display: inline-block;
-    vertical-align: top;
-    width: 47%;
-    margin: 1.5%;
-    padding: 25px;
-    background-color: var(--soft-cyan);
-    border: 2px solid var(--pacific-cyan);
-    border-radius: 25px;
-    font-size: 16px;
-    min-height: 850px;
-}
+/* ===== HEADER & NAVIGATION ===== */
 
 nav {
     background-color: var(--dusty-rose);
@@ -105,6 +96,8 @@ nav a:focus-visible {
     text-decoration: underline;
 }
 
+/* ===== ABOUT ===== */
+
 #about {
     background-color: var(--soft-cyan);
     border: 3px solid var(--pacific-cyan);
@@ -117,6 +110,27 @@ nav a:focus-visible {
 #about h2 {
     color: var(--primary-text);
     margin-top: 0;
+}
+
+/* ===== PROJECTS ===== */
+
+#projects {
+    max-width: 1150px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+#projects article {
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    margin: 1.5%;
+    padding: 25px;
+    background-color: var(--soft-cyan);
+    border: 2px solid var(--pacific-cyan);
+    border-radius: 25px;
+    font-size: 16px;
+    min-height: 850px;
 }
 
 #projects article h3 {
@@ -143,18 +157,16 @@ nav a:focus-visible {
     margin: 20px 0;
 }
 
+#projects > h2 {
+    font-size: 1.75rem;
+}
+
 #projects img.image-large {
     height: 320px;
 }
 
 #projects img.image-small {
     height: 190px;
-}
-
-#projects {
-    max-width: 1150px;
-    margin: 0 auto;
-    font-size: 0;
 }
 
 #projects details {
@@ -171,9 +183,12 @@ nav a:focus-visible {
     color: var(--mauve-bark);
 }
 
-#projects summary:hover {
+#projects summary:hover,
+#projects summary:focus-visible {
     color: var(--rosy-copper);
 }
+
+/* ===== CONTACT ===== */
 
 #contact {
     max-width: 1150px;
@@ -195,6 +210,8 @@ nav a:focus-visible {
     text-decoration: underline;
 }
 
+/* ===== FOOTER ===== */
+
 footer {
     max-width: 1150px;
     margin: 40px auto 0;
@@ -208,6 +225,8 @@ footer p {
     color: var(--mauve-bark);
     margin: 0;
 }
+
+/* ===== MOBILE RESPONSE ===== */
 
 @media (max-width: 700px) {
     #projects article {
