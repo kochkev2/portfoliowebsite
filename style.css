@@ -212,8 +212,26 @@ footer p {
 @media (max-width: 700px) {
     #projects article {
         display: block;
-        width: 98%;
-        margin: 20px 1%;
+        width: 100%;
+        margin: 20px 0;
         min-height: 0;
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav li {
+        margin: 0 8px;
+    }
+
+    #projects img,
+    #projects img.image-large,
+    #projects img.image-small {
+        height: 200px;
     }
 }
