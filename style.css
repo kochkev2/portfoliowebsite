@@ -4,6 +4,7 @@
     --rosy-copper: #D05E52;
     --dusty-rose: #CB8380;
     --strong-cyan: #4DD0E1;
+    --soft-cyan: #C4E6E9;
     --pacific-cyan: #018F9D;
     --mauve-bark: #6D5148;
 
@@ -30,7 +31,7 @@ body {
     width: 47%;
     margin: 1.5%;
     padding: 25px;
-    background-color: #C4E6E9;
+    background-color: var(--soft-cyan);
     border: 2px solid var(--pacific-cyan);
     border-radius: 25px;
     font-size: 16px;
@@ -105,7 +106,7 @@ nav a:focus-visible {
 }
 
 #about {
-    background-color: var(--strong-cyan);
+    background-color: var(--soft-cyan);
     border: 3px solid var(--pacific-cyan);
     padding: 30px;
     margin: 30px auto;
@@ -154,6 +155,24 @@ nav a:focus-visible {
     max-width: 1150px;
     margin: 0 auto;
     font-size: 0;
+}
+
+#projects details {
+    background-color: var(--primary-bg);
+    border: 1px solid var(--pacific-cyan);
+    border-radius: 12px;
+    padding: 12px;
+    margin: 15px 0;
+}
+
+#projects summary {
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--mauve-bark);
+}
+
+#projects summary:hover {
+    color: var(--rosy-copper);
 }
 
 
