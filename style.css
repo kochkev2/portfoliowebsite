@@ -27,3 +27,24 @@ body {
 nav {
     background: yellow;
 }
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--mauve-bark);
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--rosy-copper);
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--pacific-cyan);
+}
