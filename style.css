@@ -12,6 +12,10 @@
     --standard-gap: 24px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'DM Sans', sans-serif;
     background-color: var(--primary-bg);
@@ -21,11 +25,16 @@ body {
 }
 
 #projects article {
+    display: inline-block;
+    vertical-align: top;
+    width: 47%;
+    margin: 1.5%;
+    padding: 25px;
     background-color: #C4E6E9;
     border: 2px solid var(--pacific-cyan);
     border-radius: 25px;
-    padding: 25px;
-    margin: var(--standard-gap) 0;
+    font-size: 16px;
+    min-height: 850px;
 }
 
 nav {
@@ -139,4 +148,20 @@ nav a:focus-visible {
 
 #projects img.image-small {
     height: 190px;
+}
+
+#projects {
+    max-width: 1150px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+
+@media (max-width: 700px) {
+    #projects article {
+        display: block;
+        width: 98%;
+        margin: 20px 1%;
+        min-height: 0;
+    }
 }
