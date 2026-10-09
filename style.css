@@ -114,3 +114,29 @@ nav a:focus-visible {
     margin-top: 0;
 }
 
+#projects img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+#projects figcaption {
+    font-size: 0.9rem;
+    color: var(--mauve-bark);
+    font-style: italic;
+    margin-top: 8px;
+}
+
+#projects figure {
+    margin: 20px 0;
+}
+
+#projects img.image-large {
+    height: 320px;
+}
+
+#projects img.image-small {
+    height: 190px;
+}
