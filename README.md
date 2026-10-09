@@ -22,8 +22,7 @@ The portfolio currently showcases five projects:
 - Git and GitHub
 - GitHub Codespaces
 - Netlify
-
-This version of the portfolio intentionally uses no CSS 
+- CSS Implementation
 
 ## Portfolio
 

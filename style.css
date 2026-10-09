@@ -105,6 +105,7 @@ nav a:focus-visible {
     margin: 30px auto;
     border-radius: 25px;
     max-width: 1150px;
+    box-shadow: 0 4px 8px rgba(109, 81, 72, 0.15);
 }
 
 #about h2 {
@@ -131,6 +132,7 @@ nav a:focus-visible {
     border-radius: 25px;
     font-size: 16px;
     height: 900px;
+    box-shadow: 0 4px 8px rgba(109, 81, 72, 0.15);
 }
 
 #projects article h3 {
@@ -194,9 +196,10 @@ nav a:focus-visible {
     max-width: 1150px;
     margin: 40px auto;
     padding: 25px 30px;
-    background-color: var(--soft-cyan);
-    border: 2px solid var(--pacific-cyan);
+    background-color: var(--dusty-rose);
+    border: 2px solid var(--rosy-copper);
     border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(109, 81, 72, 0.15);
 }
 
 #contact h2 {
