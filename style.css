@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
 :root {
     --rosy-copper: #D05E52;
     --dusty-rose: #CB8380;
@@ -8,4 +10,20 @@
     --primary-bg: #FFF9F7;
     --primary-text: #382E2B;
     --standard-gap: 24px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    margin: 0;
+    padding: 20px;
+}
+
+#projects article {
+    margin: var(--standard-gap);
+}
+
+nav {
+    background: yellow;
 }
