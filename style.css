@@ -260,3 +260,14 @@ footer p {
         grid-column: 1 / -1;
     }
 }
+
+/* ===== PROJECT FEATURE FOR DESKTOP ===== */
+/* AI PROMPT: Using the existing CSS Grid layout in the #projects section,
+make Tinted Isle, the first project article, span both grid
+columns at desktop screen widths of 900px and above. */
+
+@media (min-width: 900px) {
+    #projects article:first-of-type {
+        grid-column: 1 / -1;
+    }
+}
