@@ -103,6 +103,27 @@ nav a:focus-visible {
     text-decoration: underline;
 }
 
+/* ===== INTRODUCTION/HERO ===== */
+
+#intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    max-width: 1150px;
+    margin: 0 auto 40px;
+    padding: 45px 30px;
+    background-color: var(--primary-bg);
+    border-left: 6px solid var(--rosy-copper);
+    border-radius: 0 25px 25px 0;
+}
+
+#intro h1 {
+    max-width: 850px;
+    margin: 0;
+    text-align: left;
+    line-height: 1.5;
+}
+
 /* ===== ABOUT ===== */
 
 #about {
@@ -259,6 +280,10 @@ footer p {
     #projects > h2 {
         grid-column: 1 / -1;
     }
+
+    #intro {
+    padding: 50px 40px;
+}
 }
 
 /* ===== PROJECT FEATURE FOR DESKTOP ===== */
@@ -279,5 +304,13 @@ columns at desktop screen widths of 900px and above. */
 
     header img {
         width: 120px;
+    }
+
+    #intro {
+    padding: 65px 55px;
+    }
+
+    #intro h1 {
+    font-size: 2.5rem;
     }
 }
