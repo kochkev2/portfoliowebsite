@@ -181,6 +181,16 @@ About and Contact sections of the portfolio. */
     font-size: 16px;
     box-shadow: 0 4px 8px rgba(109, 81, 72, 0.15);
     min-width: 0;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* ===== PROJECT INTERACTIONS ===== */
+/* https://www.youtube.com/watch?v=3RvQJX1_fKQ */
+@media (hover: hover) {
+    #projects article:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(109, 81, 72, 0.25);
+    }
 }
 
 #projects article h3 {
