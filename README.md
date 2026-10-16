@@ -16,13 +16,26 @@ The portfolio currently showcases five projects:
 - **Shroom to Breathe** — A time-management and mental wellness app that rewards productivity with collectible mushroom creatures.
 - **Fish Flop** — A 2.5D pixel-art puzzle platformer built around rotating fish tanks and changing perspective to solve puzzles.
 
-## Built With
+## Technologies Used
 
-- HTML5
-- Git and GitHub
-- GitHub Codespaces
-- Netlify
-- CSS Implementation
+- HTML5 for semantic page structure
+- CSS3 for styling and responsive design
+- CSS Grid for project card layouts
+- Flexbox for navigation and header layouts
+- CSS custom properties for consistent colors and spacing
+- Media queries for responsive design
+- Git and GitHub for version control
+- Netlify for website deployment
+
+## Responsive Design
+
+This portfolio uses a mobile-first approach
+- **Mobile (below 600px):** Single-column project layout with the logo and navigation stacked vertically.
+- **Tablet (600px and above):** Two-column project layout with adjusted spacing and image sizes.
+- **Desktop (900px and above):** Tinted Isle spans both columns as the featured project, and the header displays the logo and navigation horizontally.
+- **Large Desktop (1200px and above):** Increased padding, spacing, and typography sizes for larger screens.
+
+CSS Grid organizes the project cards, while Flexbox controls the header and navigation. Project images resize automatically while maintaining their original proportions.
 
 ## Portfolio
 
