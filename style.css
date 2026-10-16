@@ -134,11 +134,33 @@ nav a:focus-visible {
     border-radius: 25px;
     max-width: 1150px;
     box-shadow: 0 4px 8px rgba(109, 81, 72, 0.15);
+    position: relative;
 }
 
 #about h2 {
     color: var(--primary-text);
     margin-top: 0;
+}
+
+/* ===== FLORAL DECORATIONS ===== */
+/* AI PROMPT: How do I add subtle flower-inspired decorative elements to the
+About and Contact sections of the portfolio. */
+#about::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--dusty-rose);
+    border-radius: 50%;
+    box-shadow:
+        0 -12px 0 -5px var(--rosy-copper),
+        0 12px 0 -5px var(--rosy-copper),
+        12px 0 0 -5px var(--rosy-copper),
+        -12px 0 0 -5px var(--rosy-copper);
+    opacity: 0.75;
+    pointer-events: none;
 }
 
 /* ===== PROJECTS ===== */
@@ -169,7 +191,8 @@ nav a:focus-visible {
 #projects img {
     display: block;
     width: 100%;
-    height: 250px;
+    height: auto;
+    max-height: 260px;
     object-fit: contain;
     border-radius: 12px;
 }
@@ -190,11 +213,11 @@ nav a:focus-visible {
 }
 
 #projects img.image-large {
-    height: 320px;
+    max-height: 320px;
 }
 
 #projects img.image-small {
-    height: 190px;
+    max-height: 190px;
 }
 
 #projects details {
@@ -226,6 +249,7 @@ nav a:focus-visible {
     border: 2px solid var(--rosy-copper);
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(109, 81, 72, 0.15);
+    position: relative;
 }
 
 #contact h2 {
@@ -237,6 +261,24 @@ nav a:focus-visible {
     color: var(--mauve-bark);
     font-weight: 700;
     text-decoration: underline;
+}
+
+#contact::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--soft-cyan);
+    border-radius: 50%;
+    box-shadow:
+        0 -10px 0 -4px var(--pacific-cyan),
+        0 10px 0 -4px var(--pacific-cyan),
+        10px 0 0 -4px var(--pacific-cyan),
+        -10px 0 0 -4px var(--pacific-cyan);
+    opacity: 0.75;
+    pointer-events: none;
 }
 
 /* ===== FOOTER ===== */
@@ -262,12 +304,6 @@ footer p {
     h1 {
         font-size: 1.5rem;
     }
-
-    #projects img,
-    #projects img.image-large,
-    #projects img.image-small {
-        height: 200px;
-    }
 }
 
 /* ===== TABLET+ RESPONSE ===== */
@@ -283,7 +319,18 @@ footer p {
 
     #intro {
     padding: 50px 40px;
-}
+
+    #projects img {
+    max-height: 220px;
+    }   
+
+#projects img.image-large {
+    max-height: 280px;
+    }
+
+#projects img.image-small {
+    max-height: 170px;
+    }
 }
 
 /* ===== PROJECT FEATURE FOR MEDIUM DESKTOP ===== */
@@ -312,6 +359,22 @@ columns at desktop screen widths of 900px and above. */
 
     #intro h1 {
     font-size: 2.5rem;
+    }
+
+    #projects img {
+    max-height: 260px;
+    }   
+
+#projects img.image-large {
+    max-height: 320px;
+    }
+
+#projects img.image-small {
+    max-height: 190px;
+    }
+
+#projects article:first-of-type img {
+    max-height: 400px;
     }
 }
 
@@ -354,4 +417,5 @@ columns at desktop screen widths of 900px and above. */
         margin-top: 55px;
         padding: 35px 40px;
     }
+}
 }
