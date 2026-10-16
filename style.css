@@ -72,15 +72,18 @@ header img {
 }
 
 nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 nav li {
-    display: inline-block;
-    margin: 0 15px;
+    margin: 0;
 }
 
 nav a {
@@ -236,10 +239,6 @@ footer p {
 
     h1 {
         font-size: 1.5rem;
-    }
-
-    nav li {
-        margin: 0 8px;
     }
 
     #projects img,
