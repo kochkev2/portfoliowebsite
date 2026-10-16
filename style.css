@@ -286,7 +286,7 @@ footer p {
 }
 }
 
-/* ===== PROJECT FEATURE FOR DESKTOP ===== */
+/* ===== PROJECT FEATURE FOR MEDIUM DESKTOP ===== */
 /* AI PROMPT: Using the existing CSS Grid layout in the #projects section,
 make Tinted Isle, the first project article, span both grid
 columns at desktop screen widths of 900px and above. */
@@ -312,5 +312,46 @@ columns at desktop screen widths of 900px and above. */
 
     #intro h1 {
     font-size: 2.5rem;
+    }
+}
+
+/* ===== LARGE DESKTOP LAYOUT ===== */
+
+@media (min-width: 1200px) {
+    body {
+        padding: 30px 50px;
+    }
+
+    header {
+        margin-bottom: 50px;
+    }
+
+    #intro {
+        padding: 80px 70px;
+        margin-bottom: 55px;
+    }
+
+    #intro h1 {
+        font-size: 2.8rem;
+        max-width: 950px;
+    }
+
+    #about {
+        padding: 40px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+    #projects {
+        gap: 30px;
+    }
+
+    #projects article {
+        padding: 35px;
+    }
+
+    #contact {
+        margin-top: 55px;
+        padding: 35px 40px;
     }
 }
