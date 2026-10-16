@@ -38,7 +38,7 @@ nav {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.4;
     text-align: center;
@@ -80,7 +80,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 12px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -101,6 +101,16 @@ nav a:hover,
 nav a:focus-visible {
     color: #FFFFFF;
     text-decoration: underline;
+}
+
+/* ===== KEYBOARD ACCESSIBILITY ===== */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible */
+nav a:focus-visible,
+#contact a:focus-visible,
+#projects summary:focus-visible {
+    outline: 3px solid var(--pacific-cyan);
+    outline-offset: 4px;
+    border-radius: 4px;
 }
 
 /* ===== INTRODUCTION/HERO ===== */
@@ -129,7 +139,7 @@ nav a:focus-visible {
 #about {
     background-color: var(--soft-cyan);
     border: 3px solid var(--pacific-cyan);
-    padding: 30px;
+    padding: 20px;
     margin: 30px auto;
     border-radius: 25px;
     max-width: 1150px;
@@ -254,7 +264,7 @@ About and Contact sections of the portfolio. */
 #contact {
     max-width: 1150px;
     margin: 40px auto;
-    padding: 25px 30px;
+    padding: 20px;
     background-color: var(--dusty-rose);
     border: 2px solid var(--rosy-copper);
     border-radius: 25px;
@@ -307,15 +317,6 @@ footer p {
     margin: 0;
 }
 
-/* ===== MOBILE RESPONSE ===== */
-
-@media (max-width: 700px) {
-
-    h1 {
-        font-size: 1.5rem;
-    }
-}
-
 /* ===== TABLET+ RESPONSE ===== */
 
 @media (min-width: 600px) {
@@ -334,12 +335,24 @@ footer p {
     max-height: 220px;
     }   
 
-#projects img.image-large {
+    #projects img.image-large {
     max-height: 280px;
     }
 
-#projects img.image-small {
+    #projects img.image-small {
     max-height: 170px;
+    }
+
+    nav ul {
+    gap: 20px;
+    }
+    
+    #about {
+    padding: 30px;
+    }
+
+    #contact {
+    padding: 25px 30px;
     }
 }
 
@@ -347,6 +360,7 @@ footer p {
 /* AI PROMPT: Using the existing CSS Grid layout in the #projects section,
 make Tinted Isle, the first project article, span both grid
 columns at desktop screen widths of 900px and above. */
+/* Keep in mind there are changes I made after the prompt */
 
 @media (min-width: 900px) {
     #projects article:first-of-type {
@@ -375,16 +389,20 @@ columns at desktop screen widths of 900px and above. */
     max-height: 260px;
     }   
 
-#projects img.image-large {
+    #projects img.image-large {
     max-height: 320px;
     }
 
-#projects img.image-small {
+    #projects img.image-small {
     max-height: 190px;
     }
 
-#projects article:first-of-type img {
+    #projects article:first-of-type img {
     max-height: 400px;
+    }
+
+    h1 {
+    font-size: 2rem;
     }
 }
 
