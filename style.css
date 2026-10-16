@@ -59,16 +59,20 @@ h3 {
 }
 
 header {
-    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1150px;
     margin: 0 auto 35px;
     text-align: center;
 }
 
 header img {
     display: block;
-    width: 200px;
+    width: 150px;
     height: auto;
-    margin: 0 auto 18px;
+    margin: 0;
 }
 
 nav ul {
@@ -233,9 +237,6 @@ footer p {
 /* ===== MOBILE RESPONSE ===== */
 
 @media (max-width: 700px) {
-    header img {
-        width: 150px;
-    }
 
     h1 {
         font-size: 1.5rem;
@@ -268,5 +269,15 @@ columns at desktop screen widths of 900px and above. */
 @media (min-width: 900px) {
     #projects article:first-of-type {
         grid-column: 1 / -1;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header img {
+        width: 120px;
     }
 }
