@@ -2,11 +2,11 @@
 
 :root {
     --rosy-copper: #D05E52;
-    --dusty-rose: #CB8380;
+    --dusty-rose: #D99A96; /*Now Soft Rose*/
     --strong-cyan: #4DD0E1;
     --soft-cyan: #C4E6E9;
     --pacific-cyan: #018F9D;
-    --mauve-bark: #3D2925;
+    --mauve-bark: #241613; /*Now Espresso Brown*/
 
     --primary-bg: #FFF9F7;
     --primary-text: #382E2B;
@@ -446,5 +446,4 @@ columns at desktop screen widths of 900px and above. */
         margin-top: 55px;
         padding: 35px 40px;
     }
-}
 }
