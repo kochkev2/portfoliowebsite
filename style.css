@@ -6,7 +6,7 @@
     --strong-cyan: #4DD0E1;
     --soft-cyan: #C4E6E9;
     --pacific-cyan: #018F9D;
-    --mauve-bark: #6D5148;
+    --mauve-bark: #3D2925;
 
     --primary-bg: #FFF9F7;
     --primary-text: #382E2B;
@@ -99,7 +99,7 @@ nav a {
 
 nav a:hover,
 nav a:focus-visible {
-    color: #FFFFFF;
+    color: var(--primary-text);
     text-decoration: underline;
 }
 
@@ -330,6 +330,7 @@ footer p {
 
     #intro {
     padding: 50px 40px;
+    }
 
     #projects img {
     max-height: 220px;
