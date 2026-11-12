@@ -549,4 +549,111 @@ columns at desktop screen widths of 900px and above. */
             flex-shrink: 0;
         }
     }
+
+    /* ===== STICKY HEADER ===== */
+
+    header {
+        position: sticky;
+        top: 12px;
+        z-index: 1000;
+
+        background-color: var(--dusty-rose);
+        border: 2px solid var(--rosy-copper);
+        border-radius: 25px;
+
+        padding: 12px 24px;
+        max-width: 1150px;
+        margin: 0 auto 35px;
+
+        box-shadow: 0 6px 15px rgba(36, 22, 19, 0.15);
+    }
+
+    header nav {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    /* Indicates the active page: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-current */
+    nav a[aria-current="page"] {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+
+
+    /* ===== SHARED FOOTER ===== */
+
+    .site-footer {
+        position: relative;
+        max-width: 1150px;
+        margin: 70px auto 0;
+        padding: 35px 30px;
+
+        background-color: var(--dusty-rose);
+        border: 2px solid var(--rosy-copper);
+        border-radius: 25px;
+
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(36, 22, 19, 0.15);
+    }
+
+    .footer-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .footer-contact h2 {
+        color: var(--primary-text);
+        margin-top: 0;
+    }
+
+    .footer-contact a {
+        color: var(--mauve-bark);
+        font-weight: 700;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    .footer-contact a:hover {
+        color: var(--primary-text);
+    }
+
+    .copyright {
+        font-size: 0.9rem;
+        margin-top: 25px;
+        color: var(--primary-text);
+    }
+
+    /* ===== AN ATTEMPT AT PIXEL DECORATIONS ===== */
+
+    header::after,
+    .site-footer::before {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+
+        width: 12px;
+        height: 12px;
+
+        background-color: var(--dusty-rose);
+        box-shadow:
+            14px 0 var(--dusty-rose),
+            28px 8px var(--rosy-copper),
+            45px 0 var(--dusty-rose),
+            58px 15px var(--rosy-copper),
+            75px 5px var(--dusty-rose),
+            90px 20px var(--rosy-copper);
+    }
+
+    header::after {
+        bottom: -12px;
+        left: 20px;
+    }
+
+    .site-footer::before {
+        top: -12px;
+        right: 110px;
+    }
+
 }
