@@ -2,6 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script>
+    /* haha FART https://css-tricks.com/flash-of-inaccurate-color-theme-fart/ */
+    try {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+
+        if (savedTheme === "dark") {
+            document.documentElement.dataset.theme = "dark";
+        }
+    } catch (error) {
+        // Default to light mode if localStorage is unavailable.
+    }
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Kevin Koch, a game designer at MSU.">
     <meta name="author" content="Kevin Koch">
@@ -10,7 +22,7 @@
 </head>
 <body>
     <header>
-        <a href="#index.html" aria-label="Kevin Koch home">
+        <a href="index.html" aria-label="Kevin Koch home">
             <img src="images/clustresymbol.png" alt="">
         </a>
         
