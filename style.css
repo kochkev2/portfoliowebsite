@@ -446,4 +446,50 @@ columns at desktop screen widths of 900px and above. */
         margin-top: 55px;
         padding: 35px 40px;
     }
+
+
+/* ===== RESUME PAGE ===== */
+
+    #resume {
+    max-width: 1150px;
+    margin: 40px auto;
+    }
+
+    #resume h1 {
+    text-align: left;
+    font-size: 2rem;
+    }
+
+    .resume-panel {
+    background-color: var(--soft-cyan);
+    border: 3px solid var(--pacific-cyan);
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(109, 81, 72, 0.15);
+    }
+
+    .resume-panel h2 {
+    color: var(--primary-text);
+    margin-top: 0;
+    }
+
+    .resume-panel a {
+    color: var(--mauve-bark);
+    font-weight: 700;
+    }
+
+    .art-placeholder {
+    padding: 40px 20px;
+    margin: 25px 0;
+    border: 2px dashed var(--pacific-cyan);
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    }
+
+    .art-placeholder p {
+    margin: 8px 0;
+    }
+
 }
