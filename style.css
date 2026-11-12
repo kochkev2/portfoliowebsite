@@ -448,7 +448,7 @@ columns at desktop screen widths of 900px and above. */
     }
 
 
-/* ===== RESUME PAGE ===== */
+    /* ===== RESUME PAGE ===== */
 
     #resume {
     max-width: 1150px;
@@ -492,4 +492,61 @@ columns at desktop screen widths of 900px and above. */
     margin: 8px 0;
     }
 
+
+    /* ===== HERO CHARACTER PLACEHOLDER ===== */
+
+    .hero-character-placeholder {
+        width: 220px;
+        min-height: 220px;
+        padding: 25px;
+        background-color: var(--soft-cyan);
+        border: 3px dashed var(--pacific-cyan);
+        border-radius: 25px;
+        color: var(--primary-text);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-character-placeholder span {
+        font-size: 4rem;
+        color: var(--rosy-copper);
+    }
+
+    .hero-character-placeholder p {
+        margin: 5px 0;
+        font-weight: 600;
+    }
+
+    /* ===== UPDATED HERO LAYOUT ===== */
+
+    #intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hero-content {
+        flex: 1;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    @media (min-width: 900px) {
+        #intro {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-character-placeholder {
+            flex-shrink: 0;
+        }
+    }
 }
