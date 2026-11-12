@@ -152,27 +152,6 @@ nav a:focus-visible,
     margin-top: 0;
 }
 
-/* ===== FLORAL DECORATIONS ===== */
-/* AI PROMPT: How do I add subtle flower-inspired decorative elements to the
-About and Contact sections of the portfolio. */
-#about::after {
-    content: "";
-    position: absolute;
-    top: 18px;
-    right: 20px;
-    width: 24px;
-    height: 24px;
-    background-color: var(--dusty-rose);
-    border-radius: 50%;
-    box-shadow:
-        0 -12px 0 -5px var(--rosy-copper),
-        0 12px 0 -5px var(--rosy-copper),
-        12px 0 0 -5px var(--rosy-copper),
-        -12px 0 0 -5px var(--rosy-copper);
-    opacity: 0.75;
-    pointer-events: none;
-}
-
 /* ===== PROJECTS ===== */
 
 #projects {
@@ -625,7 +604,7 @@ columns at desktop screen widths of 900px and above. */
         color: var(--primary-text);
     }
 
-    /* ===== AN ATTEMPT AT PIXEL DECORATIONS ===== */
+    /* ===== AN ATTEMPT AT PIXEL DECORATIONS -ai assisted for building look of placeholders, NOT positioning, will have custom art in later iteration ===== */
 
     header::after,
     .site-footer::before {
@@ -654,6 +633,89 @@ columns at desktop screen widths of 900px and above. */
     .site-footer::before {
         top: -12px;
         right: 110px;
+    }
+
+    #about,
+    .resume-panel {
+        position: relative;
+    }
+
+    .pixel-flower {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-color: var(--rosy-copper);
+
+        box-shadow:
+            0 -12px var(--dusty-rose),
+            0 12px var(--dusty-rose),
+            -12px 0 var(--dusty-rose),
+            12px 0 var(--dusty-rose);
+
+        pointer-events: none;
+    }
+
+    .flower-top-right {
+        top: 30px;
+        right: 35px;
+    }
+
+    .flower-bottom-left {
+        bottom: 30px;
+        left: 35px;
+    }
+
+    /* ===== PROJECT GARDEN PLACEHOLDER ===== */
+
+    .garden-preview {
+        max-width: 1150px;
+        margin: 30px auto 45px;
+    }
+
+    .garden-placeholder {
+        padding: 50px 25px;
+        text-align: center;
+
+        background-color: var(--soft-cyan);
+        border: 3px dashed var(--pacific-cyan);
+        border-radius: 25px;
+    }
+
+    .garden-symbol {
+        display: block;
+        font-size: 4rem;
+        color: var(--rosy-copper);
+        margin-bottom: 15px;
+    }
+
+    .garden-placeholder h2 {
+        color: var(--primary-text);
+    }
+
+    .garden-placeholder p {
+        max-width: 550px;
+        margin: 15px auto;
+        line-height: 1.6;
+    }
+
+    /* ===== FUTURE PIXEL BACKGROUND -will utilize custom made asset later ===== */
+
+    body {
+        background-color: var(--primary-bg);
+
+        /* Temporary subtle pixel pattern */
+        background-image:
+            linear-gradient(
+                90deg,
+                rgba(1, 143, 157, 0.035) 1px,
+                transparent 1px
+            ),
+            linear-gradient(
+                rgba(1, 143, 157, 0.035) 1px,
+                transparent 1px
+            );
+
+        background-size: 24px 24px;
     }
 
 }
