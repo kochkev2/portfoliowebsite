@@ -771,4 +771,43 @@ columns at desktop screen widths of 900px and above. */
         }
     }
 
+    /* ===== THEME TOGGLE BUTTON ===== */
+
+    .theme-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+
+        background-color: var(--primary-bg);
+        color: var(--primary-text);
+        border: 2px solid var(--rosy-copper);
+        border-radius: 50%;
+
+        font-size: 1.5rem;
+        cursor: pointer;
+
+        transition:
+            background-color 0.25s ease,
+            color 0.25s ease,
+            transform 0.2s ease;
+    }
+
+    .theme-toggle:hover {
+        transform: scale(1.08);
+    }
+
+    .theme-toggle:focus-visible {
+        outline: 3px solid var(--pacific-cyan);
+        outline-offset: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .theme-toggle {
+            transition: none;
+        }
+    }
 }
