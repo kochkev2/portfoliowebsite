@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <script>
     /* haha FART https://css-tricks.com/flash-of-inaccurate-color-theme-fart/ */
+    document.documentElement.classList.add("js");
+    
     try {
         const savedTheme = localStorage.getItem("portfolio-theme");
 
@@ -95,6 +97,10 @@
         </div>
     </footer>
 
-    <script src="script.js" defer></script>
+        <!-- Third-party JavaScript library: ScrollReveal -->
+        <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js" defer></script>
+
+        <!-- Local JavaScript -->
+        <script src="script.js" defer></script>
 </body>
 </html>

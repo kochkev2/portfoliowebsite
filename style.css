@@ -810,4 +810,19 @@ columns at desktop screen widths of 900px and above. */
             transition: none;
         }
     }
+
+    /* ===== PREVENTING ANIMATION FLASH ===== */
+
+    @media (prefers-reduced-motion: no-preference) {
+        .js .hero-content,
+        .js .hero-character-placeholder,
+        .js #about,
+        .js .garden-preview,
+        .js #projects article,
+        .js .resume-panel,
+        .js .footer-content {
+            visibility: hidden;
+        }
+    }
+
 }

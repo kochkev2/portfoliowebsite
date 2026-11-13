@@ -65,4 +65,53 @@ if (themeToggle && themeIcon) {
         // Update the icon and accessibility label.
         updateThemeButton();
     });
+
+    /* ===== SCROLLREVEAL ANIMATIONS ===== */
+    /* AI PROMPT: How can I integrate the ScrollReveal JavaScript
+     * library into my portfolio as users
+    * scroll, while having reduced-motion preferences
+    */
+   
+    const prefersReducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    if (
+        typeof ScrollReveal !== "undefined" &&
+        !prefersReducedMotion
+    ) {
+        const sr = ScrollReveal({
+            distance: "30px",
+            duration: 800,
+            easing: "ease-out",
+            opacity: 0,
+            reset: false,
+            viewFactor: 0.1
+        });
+
+        sr.reveal(".hero-content", { origin: "left" });
+        sr.reveal(".hero-character-placeholder", {
+            origin: "right",
+            delay: 150
+        });
+        sr.reveal("#about", { origin: "bottom", delay: 100 });
+        sr.reveal(".garden-preview", { origin: "bottom" });
+        sr.reveal("#projects article", {
+            origin: "bottom",
+            interval: 120
+        });
+        sr.reveal(".resume-panel", { origin: "bottom" });
+        sr.reveal(".footer-content", {
+            origin: "bottom",
+            distance: "15px",
+            duration: 600
+        });
+
+        // ScrollReveal now controls element visibility.
+        document.documentElement.classList.remove("js");
+
+    } else {
+        // Show content normally if animations are unavailable.
+        document.documentElement.classList.remove("js");
+    }
 }
