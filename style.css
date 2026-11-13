@@ -811,21 +811,6 @@ columns at desktop screen widths of 900px and above. */
         }
     }
     
-    /* ===== SCROLLREVEAL FLASH PREVENTION ===== */
-
-    /* Hide content only while ScrollReveal is being prepared. */
-    @media (prefers-reduced-motion: no-preference) {
-        .js.sr-pending .hero-content,
-        .js.sr-pending .hero-character-placeholder,
-        .js.sr-pending #about,
-        .js.sr-pending .garden-preview,
-        .js.sr-pending #projects article,
-        .js.sr-pending .resume-panel,
-        .js.sr-pending .footer-content {
-            visibility: hidden;
-        }
-    }
-
     /* ===== MOBILE RESPONSIVE CONTENT ADDITIONS ===== */
 
     header {

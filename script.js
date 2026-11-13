@@ -106,12 +106,5 @@ if (themeToggle && themeIcon) {
             distance: "15px",
             duration: 600
         });
-
-        // ScrollReveal now controls element visibility.
-        document.documentElement.classList.remove("sr-pending");
-
-    } else {
-        // Show content normally if animations are unavailable.
-        document.documentElement.classList.remove("sr-pending");
     }
 }
