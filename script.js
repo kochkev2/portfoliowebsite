@@ -71,7 +71,7 @@ if (themeToggle && themeIcon) {
      * library into my portfolio as users
     * scroll, while having reduced-motion preferences
     */
-   
+
     const prefersReducedMotion = window.matchMedia(
         "(prefers-reduced-motion: reduce)"
     ).matches;
@@ -108,10 +108,10 @@ if (themeToggle && themeIcon) {
         });
 
         // ScrollReveal now controls element visibility.
-        document.documentElement.classList.remove("js");
+        document.documentElement.classList.remove("sr-pending");
 
     } else {
         // Show content normally if animations are unavailable.
-        document.documentElement.classList.remove("js");
+        document.documentElement.classList.remove("sr-pending");
     }
 }

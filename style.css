@@ -810,19 +810,119 @@ columns at desktop screen widths of 900px and above. */
             transition: none;
         }
     }
+    
+    /* ===== SCROLLREVEAL FLASH PREVENTION ===== */
 
-    /* ===== PREVENTING ANIMATION FLASH ===== */
-
+    /* Hide content only while ScrollReveal is being prepared. */
     @media (prefers-reduced-motion: no-preference) {
-        .js .hero-content,
-        .js .hero-character-placeholder,
-        .js #about,
-        .js .garden-preview,
-        .js #projects article,
-        .js .resume-panel,
-        .js .footer-content {
+        .js.sr-pending .hero-content,
+        .js.sr-pending .hero-character-placeholder,
+        .js.sr-pending #about,
+        .js.sr-pending .garden-preview,
+        .js.sr-pending #projects article,
+        .js.sr-pending .resume-panel,
+        .js.sr-pending .footer-content {
             visibility: hidden;
         }
     }
 
+    /* ===== MOBILE RESPONSIVE CONTENT ADDITIONS ===== */
+
+    header {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+        }
+
+        header > a {
+            margin-right: auto;
+        }
+
+        header img {
+            width: 55px;
+        }
+
+        header nav {
+            order: 3;
+            width: 100%;
+        }
+
+        nav ul {
+            justify-content: center;
+            gap: 16px;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+        }
+
+        .theme-toggle {
+            margin-left: auto;
+        }
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            padding: 10px;
+        }
+
+        #intro {
+            padding: 25px 15px;
+            gap: 20px;
+        }
+
+        #intro h1 {
+            font-size: 1.6rem;
+            overflow-wrap: break-word;
+        }
+
+        .hero-character-placeholder {
+            width: 100%;
+            max-width: 250px;
+            min-height: 180px;
+        }
+
+        #about,
+        .resume-panel,
+        .garden-placeholder {
+            padding: 25px 18px;
+        }
+
+        #projects article {
+            padding: 18px;
+        }
+
+        .site-footer {
+            padding: 25px 15px;
+        }
+    }
+
+    /* ===== KEYBOARD FOCUS ===== */
+
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible {
+        outline: 3px solid var(--pacific-cyan);
+        outline-offset: 4px;
+        border-radius: 4px;
+    }
+
+    nav a[aria-current="page"] {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+    }
 }
